@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# print the content of a /etc/passwd delimited
+
+while read -r passwd; do
+	echo "$passwd" | cut --delimiter=':' --fields=1,2,3
+done < "/etc/passwd

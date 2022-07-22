@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# using while an case together
+
+counter=1
+
+while [ $counter -lt 21 ]
+do
+	echo "$counter"
+	case "$counter" in
+	4)
+		echo "bad luck from China"
+		;;
+	9)
+		echo "bad luck from Japan"
+		;;
+	17)
+		echo "bad luck from Italy"
+		;;
+	esac
+	((counter++))
+done

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# displays hours and minutes
+
+hour=0
+declare -i minute
+
+while [ $hour -lt 13 ]
+do
+	echo "Hour: $hour"
+	minute=1
+
+	while [ $minute -lt 60 ]
+	do
+		echo "$minute"
+		((minute++))
+	done
+
+	((hour++))
+done

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# displays content of the cwd based on a delimter
+
+for files in *
+do
+	echo "$files" | cut --delimiter="-" --fields=2
+done
