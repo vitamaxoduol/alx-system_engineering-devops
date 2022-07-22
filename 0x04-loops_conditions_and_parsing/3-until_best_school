@@ -2,7 +2,4 @@
 # printing Best School 10 times using until
 
 counter=0
-until ((counter == 10)); 
-do 
-echo "Best School"; ((counter++)); 
-done
+until ((counter == 10)); do echo "Best School"; ((counter++)); done
